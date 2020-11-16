@@ -40,7 +40,7 @@ class Caltech(VisionDataset):
         
         #create dataset
         self.dataset=[]
-        with open('Homework2-Caltech101/'+ split +'.txt') as f:
+        with open('Caltech101/'+ split +'.txt') as f:
           for x in f:
             c, imm=x.split('/')
             if (c in class_to_idx):
